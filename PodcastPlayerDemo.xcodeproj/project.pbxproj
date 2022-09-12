@@ -13,6 +13,7 @@
 		6A066A9028CF542C008071D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A066A8E28CF542C008071D0 /* Main.storyboard */; };
 		6A066A9228CF542D008071D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A066A9128CF542D008071D0 /* Assets.xcassets */; };
 		6A066A9528CF542D008071D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A066A9328CF542D008071D0 /* LaunchScreen.storyboard */; };
+		6A066A9E28CF548D008071D0 /* PodcastPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 6A066A9D28CF548D008071D0 /* PodcastPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A066A9E28CF548D008071D0 /* PodcastPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = PodcastPlayerDemo;
+			packageProductDependencies = (
+				6A066A9D28CF548D008071D0 /* PodcastPlayer */,
+			);
 			productName = PodcastPlayerDemo;
 			productReference = 6A066A8528CF542C008071D0 /* PodcastPlayerDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 6A066A7C28CF542C008071D0;
+			packageReferences = (
+				6A066A9C28CF548D008071D0 /* XCRemoteSwiftPackageReference "PodcastPlayer" */,
+			);
 			productRefGroup = 6A066A8628CF542C008071D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6A066A9C28CF548D008071D0 /* XCRemoteSwiftPackageReference "PodcastPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:harikrishna-bista/PodcastPlayer.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6A066A9D28CF548D008071D0 /* PodcastPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6A066A9C28CF548D008071D0 /* XCRemoteSwiftPackageReference "PodcastPlayer" */;
+			productName = PodcastPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6A066A7D28CF542C008071D0 /* Project object */;
 }
