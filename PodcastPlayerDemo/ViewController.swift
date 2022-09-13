@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
    
     @IBAction func showPodcastPlayer(_ sender: Any) {
-        let podcastPlayerVC = PlayerViewController(playerView: PodcastPlayerView())
+        let podcastPlayerVC = PlayerViewController()
         podcastPlayerVC.dataSource = self
         podcastPlayerVC.delegate = self
         navigationController?.pushViewController(podcastPlayerVC, animated: true)
